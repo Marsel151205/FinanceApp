@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".fragments.financialbook.AddingCostsFragment">
+
+    <TextView
+        android:id="@+id/tv_finance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/oleo_script_bold"
+        android:gravity="center"
+        android:text="Finance"
+        android:textColor="@color/green"
+        android:textSize="40sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="50dp"
+        android:text="На что были потрачены деньги?"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/et_sent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/background_edit_text"
+        android:gravity="center"
+        android:hint="Hamburger"
+        android:paddingVertical="15dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="50dp"
+        android:text="Сколько было потрачено?"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/et_spent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/background_edit_text"
+        android:gravity="center"
+        android:hint="100"
+        android:paddingVertical="15dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_add_data"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80dp"
+        android:backgroundTint="@color/green"
+        android:fontFamily="@font/oleo_script"
+        android:paddingHorizontal="40dp"
+        android:paddingVertical="10dp"
+        android:text="Add Data"
+        android:textColor="@color/simple_white"
+        android:textSize="24sp"
+        app:cornerRadius="4dp" />
+
+</LinearLayout>

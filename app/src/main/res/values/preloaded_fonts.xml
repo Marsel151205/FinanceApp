@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/</item>
+        <item>@font/aclonica</item>
+        <item>@font/aleo_light</item>
+        <item>@font/bebas_neue</item>
+        <item>@font/oleo_script</item>
+        <item>@font/oleo_script_bold</item>
+    </array>
+</resources>

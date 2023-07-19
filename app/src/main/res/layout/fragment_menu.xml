@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".fragments.menu.MenuFragment">
+
+    <TextView
+        android:id="@+id/tv_finance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/oleo_script_bold"
+        android:text="Finance"
+        android:textColor="@color/green"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_financial_book"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/simple_white"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/green"
+        android:fontFamily="@font/oleo_script"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="10dp"
+        android:text="Financial Book"
+        android:textSize="24sp"
+        app:cornerRadius="6dp"
+        app:layout_constraintEnd_toEndOf="@id/tv_finance"
+        app:layout_constraintStart_toStartOf="@id/tv_finance"
+        app:layout_constraintTop_toBottomOf="@id/tv_finance" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_quiz"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/green"
+        android:fontFamily="@font/oleo_script"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="10dp"
+        android:text="Quiz"
+        android:textSize="24sp"
+        app:cornerRadius="6dp"
+        app:layout_constraintEnd_toEndOf="@id/btn_financial_book"
+        app:layout_constraintStart_toStartOf="@id/btn_financial_book"
+        app:layout_constraintTop_toBottomOf="@id/btn_financial_book" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_settings"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/green"
+        android:fontFamily="@font/oleo_script"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="10dp"
+        android:text="Settings"
+        android:textSize="24sp"
+        app:cornerRadius="6dp"
+        app:layout_constraintEnd_toEndOf="@id/btn_quiz"
+        app:layout_constraintStart_toStartOf="@id/btn_quiz"
+        app:layout_constraintTop_toBottomOf="@id/btn_quiz" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_about"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/green"
+        android:fontFamily="@font/oleo_script"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="10dp"
+        android:text="About"
+        android:textSize="24sp"
+        app:cornerRadius="6dp"
+        app:layout_constraintEnd_toEndOf="@id/btn_settings"
+        app:layout_constraintStart_toStartOf="@id/btn_settings"
+        app:layout_constraintTop_toBottomOf="@id/btn_settings" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/green"
+        android:fontFamily="@font/oleo_script"
+        android:paddingHorizontal="25dp"
+        android:paddingVertical="15dp"
+        android:text="Exit"
+        android:textSize="24sp"
+        app:cornerRadius="6dp"
+        app:layout_constraintEnd_toEndOf="@id/btn_about"
+        app:layout_constraintStart_toStartOf="@id/btn_about"
+        app:layout_constraintTop_toBottomOf="@id/btn_about" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

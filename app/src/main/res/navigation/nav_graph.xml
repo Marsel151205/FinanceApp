@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/menuFragment">
+
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.financeapp.fragments.menu.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu">
+        <action
+            android:id="@+id/action_menuFragment_to_financialBookFragment"
+            app:destination="@id/financialBookFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_quizFragment"
+            app:destination="@id/quizFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/financialBookFragment"
+        android:name="com.example.financeapp.fragments.financialbook.FinancialBookFragment"
+        android:label="fragment_financial_book"
+        tools:layout="@layout/fragment_financial_book" >
+        <action
+            android:id="@+id/action_financialBookFragment_to_addingCostsFragment"
+            app:destination="@id/addingCostsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.financeapp.fragments.menu.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/quizFragment"
+        android:name="com.example.financeapp.fragments.quiz.QuizFragment"
+        android:label="fragment_quiz"
+        tools:layout="@layout/fragment_quiz" />
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.financeapp.fragments.menu.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/addingCostsFragment"
+        android:name="com.example.financeapp.fragments.financialbook.AddingCostsFragment"
+        android:label="fragment_adding_costs"
+        tools:layout="@layout/fragment_adding_costs" />
+</navigation>
